@@ -5,6 +5,11 @@
 body {
     background-color: #f3f3f3;
     font-family: "Arial";
+    cursor: url('../../cursors/leg.cur'), auto;
+}
+
+a {
+    cursor: url('../../cursors/ball.cur'), auto;
 }
 
 .wrapper {
