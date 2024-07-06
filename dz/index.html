@@ -25,14 +25,30 @@
         </p>
       </div>
     </header>
-    <section class="img">
-      <div class="img1"><img src="img/picture.png" alt="" class="picture-1" /></div>
-      <div class="img2 flex-between">
-        <p><img src="img/Shar_1.png" alt="" class="picture-2" /></p>
-        <p><img src="img/Shar_2.png" alt="" class="picture-3" /></p>
-        <p><img src="img/Shar_3.png" alt="" class="picture-4" /></p>
-        <p><img src="img/Shar_4.png" alt="" class="picture-5" /></p>
-      </section>
+    <div class="img">
+      <picture class="img1">
+        <img src="img/picture.webp" alt="" class="picture-1" />
+        <source srcset="img/picture.jpg" class="picture-1">
+      </picture>
+      <div class="imgs flex-between">
+        <picture class="img2">
+          <img src="img/Shar_1.webp" alt="" class="picture-2" />
+          <source srcset="img/Shar_1.webp" alt="" class="picture-2" />
+        </picture>
+        <picture class="img3">
+          <img src="img/Shar_2.webp" alt="" class="picture-3" />
+          <source srcset="img/Shar_2.webp" alt="" class="picture-3" />
+        </picture>
+        <picture class="img4">
+          <img src="img/Shar_3.webp" alt="" class="picture-4" />
+          <source srcset="img/Shar_3.webp" alt="" class="picture-4" />
+        </picture>
+        <picture class="img5">
+          <img src="img/Shar_4.webp" alt="" class="picture-5" />
+          <source srcset="img/Shar_4.webp" alt="" class="picture-5" />
+        </picture>
+      </div>
+    </div>
       <main>
         <nav class="navigation flex-between">
           <section class="partners">
@@ -53,7 +69,6 @@
           </section>
         </nav>
       </main>
-    </div>
   </div>
     <footer class="footer">
       <div class="wrapper flex-between">
