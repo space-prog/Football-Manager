@@ -27,7 +27,7 @@ body {
     margin: 15rem 8rem 15rem 15rem;
 }
 
-.logo p{
+.logo p {
     margin-top: 15rem;
     font-size: 14rem;
     color: #5a5a5a;
@@ -40,7 +40,7 @@ body {
     display: block;
 }
 
-.grafik-text span{
+.grafik-text span {
     font-size: 14rem;
     color: #5a5a5a;
     font-weight: bold;
@@ -50,7 +50,7 @@ body {
 .grafik-text,
 .phone-text {
     align-items: center;
-    /* column-gap: 2px; */
+    column-gap: 2px;
 }
 
 .grafik,
@@ -146,22 +146,22 @@ h1 {
 }
 
 .contacts a::before,
-.partners a::before  {
-    bottom: 0; 
+.partners a::before {
+    bottom: 0;
 }
 
-.partners li:hover > a::before,
-.contacts p:hover > a::before {
-    width: 100%;    
+.partners li:hover>a::before,
+.contacts p:hover>a::before {
+    width: 100%;
 }
 
 .contacts {
-    column-gap: 15rem;
+    column-gap: 8rem;
     padding-bottom: 10rem;
 }
 
 .partners p {
-    padding: 10rem 20rem 10rem 20rem; 
+    padding: 10rem 20rem 10rem 20rem;
     white-space: nowrap;
     text-align: left;
     background-color: #39930d;
@@ -243,6 +243,12 @@ a {
     .img2 {
         column-gap: 15px;
     }
+
+    .instagram,
+    .facebook,
+    .twitter {
+        padding-left: 8rem;
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -251,8 +257,29 @@ a {
     }
 }
 
+@media screen and (min-width: 580px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .contacts {
+        column-gap: 12rem;
+    }
+
+    .grafik-text,
+    .phone-text {
+        column-gap: 7rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .img2 {
         flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .flex-between {
+        justify-content: space-between;
     }
 }
