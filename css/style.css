@@ -2,46 +2,46 @@
     margin: 0;
 }
 
+html {
+    font-size: 1px;
+}
+
 body {
     background-color: #f3f3f3;
     font-family: "Arial";
-    cursor: url('../../cursors/leg.cur'), auto;
-}
-
-a {
-    cursor: url('../../cursors/ball.cur'), auto;
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 960rem;
     background-color: #ffffff;
     margin: 0 auto;
-    padding: 0px 15px;
+    padding: 0 15rem;
 }
 
 .header {
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .ball {
-    margin: 15px 8px 15px 15px;
+    margin: 15rem 8rem 15rem 15rem;
 }
 
 .logo p{
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 15rem;
+    font-size: 14rem;
     color: #5a5a5a;
 }
 
 .logo b {
-    font-size: 24px;
+    font-size: 24rem;
     text-transform: uppercase;
     color: #39930d;
     display: block;
 }
 
 .grafik-text span{
-    font-size: 14px;
+    font-size: 14rem;
     color: #5a5a5a;
     font-weight: bold;
     text-align: right;
@@ -50,7 +50,7 @@ a {
 .grafik-text,
 .phone-text {
     align-items: center;
-    column-gap: 10px;
+    /* column-gap: 2px; */
 }
 
 .grafik,
@@ -62,7 +62,7 @@ a {
 .phone-number {
     text-decoration: none;
     position: relative;
-    font-size: 14px;
+    font-size: 14rem;
     color: #5a5a5a;
     font-weight: bold;
     text-align: right;
@@ -70,12 +70,32 @@ a {
 
 .flex-between {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .picture-1 {
+    height: 200rem;
     width: 100%;
-    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: 75%;
+    vertical-align: bottom;
+}
+
+.img1 {
+    margin-bottom: 20rem;
+}
+
+.img2 {
+    flex-wrap: wrap;
+    row-gap: 10rem;
+}
+
+.img2 img {
+    width: 100%;
+}
+
+.img p {
+    width: 100%;
 }
 
 main {
@@ -83,27 +103,29 @@ main {
 }
 
 .main-text {
-    max-width: 620px;
+    max-width: 620rem;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 24rem;
     color: #39930d;
-    margin-bottom: 16px;
+    margin-bottom: 16rem;
 }
 
 .p1,
 .p2,
 .p3 {
-    font-size: 14px;
+    font-size: 14rem;
     color: #343434;
-    margin: 0 0 16px 0;
+    margin: 0 0 16rem 0;
 }
 
 .navigation {
+    flex-wrap: wrap;
+    row-gap: 20rem;
     align-items: flex-start;
-    column-gap: 18px;
-    padding: 30px 0;
+    column-gap: 18rem;
+    padding: 30rem 0;
     width: 100%;
 }
 
@@ -134,28 +156,29 @@ h1 {
 }
 
 .contacts {
-    column-gap: 15px;
+    column-gap: 15rem;
+    padding-bottom: 10rem;
 }
 
 .partners p {
-    padding: 10px 20px 10px 20px; 
+    padding: 10rem 20rem 10rem 20rem; 
     white-space: nowrap;
     text-align: left;
     background-color: #39930d;
-    font-size: 18px;
+    font-size: 18rem;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
 }
 
 .partners {
-    min-width: 300px;
+    min-width: 300rem;
 }
 
 .li {
     list-style-type: none;
-    padding-top: 12px;
-    font-size: 14px;
+    padding-top: 12rem;
+    font-size: 14rem;
     text-transform: uppercase;
     color: #343434;
 }
@@ -165,7 +188,7 @@ h1 {
 }
 
 li {
-    padding-top: 10px;
+    padding-top: 10rem;
 }
 
 a {
@@ -173,20 +196,24 @@ a {
 }
 
 .footer {
-    padding: 5px 136px 6px;
-    font-size: 14px;
+    padding: 8rem 0;
+    font-size: 14rem;
     color: #fff;
     background-color: #39930d;
 }
 
+.footer .wrapper {
+    justify-content: space-between;
+}
+
 .footer-wrapper a {
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 20rem;
+    max-height: 20rem;
 }
 
 .footer-text-1 {
-    padding-top: 7px;
-    font-size: 14px;
+    padding-top: 7rem;
+    font-size: 14rem;
     color: #fff;
 }
 
@@ -195,8 +222,8 @@ a {
 .twitter {
     width: 20px;
     height: 20px;
-    padding-top: 6px;
-    padding-left: 11px;
+    padding-top: 6rem;
+    padding-left: 2rem;
     transition: all .3s ease;
 }
 
@@ -206,4 +233,26 @@ a {
 
 .footer div {
     background-color: #39930d;
+}
+
+@media screen and (min-width: 425px) {
+    .img2 p {
+        max-width: 48%;
+    }
+
+    .img2 {
+        column-gap: 15px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .img2 p {
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img2 {
+        flex-wrap: nowrap;
+    }
 }
